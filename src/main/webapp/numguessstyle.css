@@ -16,13 +16,14 @@ body {
 
 h1 {
     font-size: large;
-    background-color: cornflowerblue;
+    background-color: yellowgreen;
     color: white;
     padding-top: 2em;
     padding-bottom: .2em;
     padding-left: .4em;
     margin: 0;
 }
+
 
 #tagline p {
     font-style: italic;
