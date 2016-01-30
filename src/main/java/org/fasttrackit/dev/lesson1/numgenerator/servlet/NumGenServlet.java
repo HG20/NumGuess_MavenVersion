@@ -83,7 +83,7 @@ public class NumGenServlet extends HttpServlet {
                //jsonResponse = "{\"keySuccess\":\"" + success + "\", \"keyHint\":\"" + hint + "\", \"keyNrGuesses\":\"" + nrGuesses + "\"}";
                 jsonResponse = "{\"keySuccess\":\"" + success + "\", \"keyHint\":\"" + hint + "\", \"keyNrGuesses\":\"" + nrGuesses + "\", \"keyDiff\":\"" + diff + "\"}";
 
-                System.out.println(jsonResponse);
+               // System.out.println(jsonResponse);
             } else {
                 jsonResponse = "{\"keyError\":\"WRONGNUMBERFORMAT\"}";
             }
