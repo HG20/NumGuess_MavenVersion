@@ -24,12 +24,12 @@
         }
 
          function callback() {
-             if(xmlHttp.readyState==4 && xmlHttp.status==200) {
+             if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
                  var jSonMessage = JSON.parse(xmlHttp.responseText);
-                 var keyRestartGame=jSonMessage.keyRestartGame;
+                 var keyRestartGame = jSonMessage.keyRestartGame;
                  if (keyRestartGame != undefined && keyRestartGame.length > 0) {
                      alert("Restart cu succes, jocul a reinceput!");
-                     document.getElementById("number").value="";
+                     document.getElementById("number").value = "";
                      return;
                  }
 
@@ -38,20 +38,23 @@
                      alert("Trebuie sa introduceti un numar valid!");
                      return;
                  }
-                var keySuccess = jSonMessage.keySuccess;
+                 var keySuccess = jSonMessage.keySuccess;
                  var keyHint = jSonMessage.keyHint;
                  var keyNrGuesses = jSonMessage.keyNrGuesses;
+                 var keyDiff = jSonMessage.keyDiff;
 
-                 if(keySuccess=="false") {
-                     if (keyHint == "higher")
-                         document.getElementById("serverResponse").innerHTML = "WRONG, Try a Higher one!";
-                     else if (keyHint == "lower")
-                         document.getElementById("serverResponse").innerHTML = "WRONG, Try a Lower one!";
-                 }
-                 else
-                 if(keySuccess=="true")
+
+                 if (keySuccess == "false");
                  {
-                     document.getElementById("serverResponse").innerHTML = "Congrats, you guessed the number " + document.getElementById("number").value + " after " + keyNrGuesses + " guesses.";
+                     if (keyHint == "higher") {
+                         document.getElementById("serverResponse").innerHTML = "WRONG, Try a Higher one!";
+                     }
+                     else if (keyHint == "lower") {
+                         document.getElementById("serverResponse").innerHTML = "WRONG, Try a Lower one!";
+                     }
+                     else if (keySuccess == "true") {
+                         document.getElementById("serverResponse").innerHTML = "Congrats, you guessed the number " + document.getElementById("number").value + " after " + keyNrGuesses + " guesses and your time is "+ keyDiff + " seconds.";
+                     }
                  }
              }
          }

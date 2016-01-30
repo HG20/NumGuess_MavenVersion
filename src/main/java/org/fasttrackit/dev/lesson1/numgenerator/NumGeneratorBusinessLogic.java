@@ -23,6 +23,11 @@ public class NumGeneratorBusinessLogic {
     private int numberOfGuesses;
     private int generatedNumber;
     private String hint;
+    long t1;
+    long t2;
+    double diff;
+
+
 
     public NumGeneratorBusinessLogic(){
         resetNumberGenerator();
@@ -44,20 +49,34 @@ public class NumGeneratorBusinessLogic {
         return isFirstTime;
     }
 
+    public double getDiff(){return diff;}
+    void setDiff(){this.diff=diff;}
+
+
+
+
     public void resetNumberGenerator(){
         isFirstTime = true;
         numberOfGuesses = 0;
         hint = "";
+        diff=0;
     }
 
     public boolean determineGuess(int guessNumber){
         if (isFirstTime) {
+
+             t1 =System.currentTimeMillis();
+
             generatedNumber = NumGenerator.generate(MAX_NUMBER);
             System.out.println("gennr:"+generatedNumber);
             isFirstTime = false;
         }
         numberOfGuesses++;
         if (guessNumber == generatedNumber) {
+
+             t2=System.currentTimeMillis();
+            diff = (t2-t1)/1000.0;
+            System.out.println("You guessed the nr after:" + getDiff());
             hint="";
             successfulGuess = true;
         } else if (guessNumber < generatedNumber) {
@@ -68,6 +87,8 @@ public class NumGeneratorBusinessLogic {
             successfulGuess = false;
         }
         return successfulGuess;
+
+
     }
 
 
