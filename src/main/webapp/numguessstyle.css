@@ -54,6 +54,11 @@ h1 {
 ;
 }
 
+#ul {
+    left: 20px;
+    padding-left: 20px;
+}
+
 #bodycontent {
     position: absolute;
     left: 140px;
