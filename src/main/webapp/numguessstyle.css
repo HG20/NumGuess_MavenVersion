@@ -28,9 +28,9 @@ h1 {
 #tagline p {
     font-style: italic;
     font-family: Georgia, Times, serif;
-    background-color: #bed8f3;
-    border-top: 3px solid #7da5d8;
-    border-bottom: 3px solid #7da5d8;
+    background-color: white;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
     padding-top: .2em;
     padding-bottom: .2em;
     padding-left: .8em;
@@ -39,7 +39,7 @@ h1 {
 
 #header {
     position: absolute;
-    border-top: 3px solid #7da5d8;
+    border-top: 3px solid red;
     width: 100%;
 }
 
@@ -48,8 +48,8 @@ h1 {
     top: 110px;
     width: 110px;
     height: 180px;
-    background-color: green;
-    color:black;
+    background-color: lime;
+    color:white;
     padding-left: .8em;
 ;
 }
@@ -71,7 +71,7 @@ h1 {
     width: 120px;
     height:180px;
     background-color: lime;
-    color:black;
+    color:white;
     padding-left: .8em;
 ;
 }
@@ -82,8 +82,8 @@ h1 {
     top: 210px;
     left: 140px;
     width: 200px;
-    background-color: lawngreen;
-    color: blue;
+    background-color: lime;
+    color: white;
     padding-left: .8em;
 
 }
