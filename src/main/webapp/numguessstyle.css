@@ -46,14 +46,13 @@ h1 {
 #navigation {
     position: absolute;
     font-family:Raleway;
-    left: 30px;
     top: 110px;
     width: 150px;
     height: 200px;
     text-decoration: none;
     background-color: antiquewhite;
     color:brown;
-    padding-left: .8em;
+    padding-left: .3em;
 ;
 }
 
