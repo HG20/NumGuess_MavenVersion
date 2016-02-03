@@ -45,6 +45,7 @@ h1 {
 
 #navigation {
     position: absolute;
+    font-family:Raleway;
     top: 110px;
     width: 110px;
     height: 180px;
@@ -67,6 +68,7 @@ h1 {
 
 #postcontent {
     position: absolute;
+    font-family:Raleway;
     left: 360px;
     top: 110px;
     width: 120px;
