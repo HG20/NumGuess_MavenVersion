@@ -60,6 +60,7 @@ h1 {
 
 #bodycontent {
     position: absolute;
+    font-family: "Arial Narrow";
     left: 140px;
     top: 120px;
     padding-top:.4em;
