@@ -46,8 +46,9 @@ h1 {
 #navigation {
     position: absolute;
     font-family:Raleway;
+    left: 30px;
     top: 110px;
-    width: 130px;
+    width: 150px;
     height: 200px;
     text-decoration: none;
     background-color: antiquewhite;
@@ -69,9 +70,9 @@ h1 {
 #postcontent {
     position: absolute;
     font-family:Raleway;
-    left: 360px;
+    left: 390px;
     top: 110px;
-    width: 140px;
+    width: 160px;
     height:200px;
     text-decoration: none;
     background-color: antiquewhite;
